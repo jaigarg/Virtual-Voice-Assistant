@@ -1,0 +1,34 @@
+{
+    "accounts": [
+        {
+            "accountID": 1,
+            "clientID": 1234,
+            "lastMrkClose": "$123",
+            "name": "Account 1"
+        },
+        {
+            "accountID": 2,
+            "clientID": 5678,
+            "lastMrkClose": "$18",
+            "name": "Jane's Account"
+        },
+        {
+            "accountID": 3,
+            "clientID": 1234,
+            "lastMrkClose": "$76",
+            "name": "Jon's Account"
+        },
+        {
+            "accountID": 4,
+            "clientID": 1234,
+            "lastMrkClose": "-$772",
+            "name": "Play Fund"
+        },
+        {
+            "accountID": 5,
+            "clientID": 5678,
+            "lastMrkClose": "$2082",
+            "name": "Investments"
+        }
+    ]
+}

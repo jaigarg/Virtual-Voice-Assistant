@@ -1,0 +1,62 @@
+<!-- <p>client-profile works!</p> -->
+<div id="Client1" *ngIf="client" class="tabcontent" style="margin: 10px;">
+    <div style="padding: 20px;">
+        <div>Client Name : <span>{{client.name}}</span></div>
+        <div>Address : <span>{{client.address}}</span></div>
+    </div>
+    <div class="scrollmenu">
+        <a [ngClass]="{active: account == selectedAccount}" *ngFor="let account of clientAccounts"
+            (click)="onAccountSelect(account)">
+            <span>{{ account.name }}</span>
+            <div>{{ account.lastMrkClose }}</div>
+        </a>
+    </div>
+
+    <div id="'Account1'" class="tabcontent" *ngIf="selectedAccount">
+        <div style="padding: 20px;">
+            <!-- <div>
+                Account: {{selectedAccount.name}}
+                <button id="EditAccountName" class="tablinks" onclick="edit(event, 'AccountEdit')">
+                    Edit Account Name
+                </button>
+            </div> -->
+            <div>
+                <label>
+                    <span>Account:</span>
+                    <span *ngIf="!isEdit">{{selectedAccount.name}}</span>
+                    <input *ngIf="isEdit" [(ngModel)]="accountName" placeholder="name" />
+                </label>
+                <button style="margin-left: 10px;" *ngIf="!isEdit" id="EditAccountName" class="tablinks" (click)="onEdit()">
+                        Edit Account Name
+                </button>
+                <span style="margin-left: 10px;" *ngIf="isEdit">
+                    <span (click)="onSave(1)">save</span> / <span (click)="onSave(0)">cancel</span>
+                </span>
+            </div>
+            <div>
+                Last Market Close: {{selectedAccount.lastMrkClose}}
+            </div>
+            <div>
+                Current Market Value : {{currentMarketValue}}
+            </div>
+        </div>
+        <div style="margin: 10px;">
+            <div><b>Positions</b></div>
+            <table>
+                <tr>
+                    <td>Symbol</td>
+                    <td>Quantity</td>
+                    <td>Price</td>
+                    <td>Total</td>
+                </tr>
+                <tr *ngFor="let position of positionTable">
+                    <td>{{ position.symbol }}</td>
+                    <td>{{ position.qty }}</td>
+                    <td>{{ position.price }}</td>
+                    <td>{{ position.total }}</td>
+                </tr>
+            </table>
+            <div *ngIf="positionTable.length == 0">No position records.</div>
+        </div>
+    </div>
+</div>

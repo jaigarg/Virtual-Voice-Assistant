@@ -1,0 +1,14 @@
+{
+    "clients": [
+        {
+            "clientID": 1234,
+            "name": "Nirbighna Mishra",
+            "address": "123 Memory Lane"
+        },
+        {
+            "clientID": 5678,
+            "name": "Jai Garg",
+            "address": "124 Memory Lane"
+        }
+    ]
+}

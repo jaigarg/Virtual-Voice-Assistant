@@ -1,0 +1,7 @@
+{
+    "/speechTotext": {
+        "target": "http://localhost:105",
+        "secure": false,
+        "changeOrigin": false
+    }
+}

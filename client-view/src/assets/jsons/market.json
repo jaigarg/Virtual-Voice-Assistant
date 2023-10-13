@@ -1,0 +1,44 @@
+{
+    "stocks": [
+        {
+            "symbol": "QGEN",
+            "price": 41.59
+        },
+        {
+            "symbol": "GNW",
+            "price": 4.61
+        },
+        {
+            "symbol": "IRTC",
+            "price": 95
+        },
+        {
+            "symbol": "OCFT",
+            "price": 13.01
+        },
+        {
+            "symbol": "BLDP",
+            "price": 10.70
+        },
+        {
+            "symbol": "AU",
+            "price": 20.03
+        },
+        {
+            "symbol": "GSX",
+            "price": 43.85
+        },
+        {
+            "symbol": "BAK",
+            "price": 12.94
+        },
+        {
+            "symbol": "TSLA",
+            "price": 781.73
+        },
+        {
+            "symbol": "GOOG",
+            "price": 1394.24
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+<div class="topnav">
+    <h2>Household 360 View</h2>
+    <div class="search-container">
+    <input ng-model="searchText" type="text" placeholder="Search household">
+    <div>{{searchText}} Household</div>
+    <button type="submit" (click)="onSubmitClick()"><i class="fa fa-search">Submit</i></button>
+</div>
+</div>
+<div class="navbar" *ngIf="clients">
+    <a [ngClass]="{active: isMenuSelected}" (click)="onClientSelect('menu')">Home</a>
+    <div *ngFor="let client of clients.clients">
+        <a [ngClass]="{active: client == selectedClient}" (click)="onClientSelect(client)">{{ client.name }}</a>
+    </div>
+</div>
+
+<div *ngIf="isMenuSelected">
+    No houssehold records.
+
+    <!-- <table>
+        <tr>
+            <td>Symbol</td>
+            <td>Quantity</td>
+            <td>Price</td>
+            <td>Total</td>
+        </tr>
+        <tr *ngFor="let position of positionTable">
+            <td>{{ position.symbol }}</td>
+            <td>{{ position.qty }}</td>
+            <td>{{ position.price }}</td>
+            <td>{{ position.total }}</td>
+        </tr>
+    </table> -->
+</div>
+<ngx-spinner></ngx-spinner>
+<app-client-profile></app-client-profile>

@@ -1,0 +1,112 @@
+{
+    "accounts": [
+        {
+            "accountID": 5,
+            "positions": [
+                {
+                    "symbol": "QGEN",
+                    "qty": 15
+                },
+                {
+                    "symbol": "QGEN",
+                    "qty": 3
+                },
+                {
+                    "symbol": "BLDP",
+                    "qty": 1
+                },
+                {
+                    "symbol": "BAK",
+                    "qty": 4
+                },
+                {
+                    "symbol": "GSX",
+                    "qty": 0
+                },
+                {
+                    "symbol": "TSLA",
+                    "qty": 2
+                },
+                {
+                    "symbol": "GOOG",
+                    "qty": 5
+                }
+            ]
+        },
+        {
+            "accountID": 4,
+            "positions": []
+        },
+        {
+            "accountID": 3,
+            "positions": [
+                {
+                    "symbol": "OCFT",
+                    "qty": 2
+                },
+                {
+                    "symbol": "GOOG",
+                    "qty": 10
+                },
+                {
+                    "symbol": "TSLA",
+                    "qty": 1
+                }
+            ]
+        },
+        {
+            "accountID": 2,
+            "positions": [
+                {
+                    "symbol": "TSLA",
+                    "qty": 2
+                },
+                {
+                    "symbol": "AU",
+                    "qty": 13
+                },
+                {
+                    "symbol": "IRTC",
+                    "qty": 1
+                },
+                {
+                    "symbol": "QGEN",
+                    "qty": 3
+                },
+                {
+                    "symbol": "GOOG",
+                    "qty": 15
+                }
+            ]
+        },
+        {
+            "accountID": 1,
+            "positions": [
+                {
+                    "symbol": "BLDP",
+                    "qty": 4
+                },
+                {
+                    "symbol": "IRTC",
+                    "qty": 12
+                },
+                {
+                    "symbol": "GNW",
+                    "qty": 1
+                },
+                {
+                    "symbol": "TSLA",
+                    "qty": 2
+                },
+                {
+                    "symbol": "GOOG",
+                    "qty": 25
+                },
+                {
+                    "symbol": "GOOG",
+                    "qty": 1
+                }
+            ]
+        }
+    ]
+}
